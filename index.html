@@ -4,258 +4,586 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FOOD RESTAURANT</title>
-     <!-- aos css cdn link  -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <title>Codevo - Ecommerce Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/promotion.css">
+    <link rel="stylesheet" href="./css/product.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <!-- <link rel="stylesheet" href="TaiNguen/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <!-- Glidejs -->
+    <link rel="stylesheet" href="./lib/glide.core.css">
+    <link rel="stylesheet" href="./lib/glide.theme.css">
 
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">    
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;500&family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="Style.css">
 </head>
+
 <body>
-    <header>     
-        <a href="#" class="logo"><img src="img/logo-img.png" alt="load"></a>      
-        <div id="menu-bar" class="fas fa-hamburger"></div>
-        <nav class="navbar">
-            <ul>
-                <li><a class="btn-menu active" href="#home" >home</a></li>
-                <li><a class="btn-menu" href="#about">about</a></li>
-                <li><a class="btn-menu" href="#menu">menu</a></li>
-                <li><a class="btn-menu" href="#popular">popular</a></li>
-                <li><a class="btn-menu" href="#gallery">gallery</a></li>
-                <li><a class="btn-menu" href="#order">order</a> </li>
-            </ul>         
-        </nav>
-    </header>
-    <!-- home section starts -->
-    <section class="home" id="home">
-        <div class="content" data-aos="fade-right">
-            <h3>we belive good food offer great smile</h3>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam quaerat delectus architecto, itaque commodi tenetur illo dicta iusto magni non!</p>
-            <a href="#"><button class="btn">get started</button></a>          
-        </div>
-        <div class="image" data-aos="fade-up">
-            <img src="img/home-img.png" alt="load">
-        </div>
-    </section>
-     <!-- home section end -->
-    <!-- about section starts -->
-    <section class="about" id="about">
-        <div class="image" data-aos="fade-right" >
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="wrapper container">
+            <div class="logo"><a href="index.html">TTTSHOP</a></div>
+            <ul class="nav-list">
+                <div class="top">
+                    <label for="" class="btn close-btn">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li>
 
-        </div>
-        <div class="content" data-aos="fade-left">
-            <h3>a word about us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, dolorum voluptatibus? Tempora error, quisquam, quia laudantium, voluptatem nam doloribus modi quis ad similique reiciendis quasi quo voluptates quas maiores animi!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In dolore nam ab nobis veritatis debitis. Debitis voluptates maiores dolorem possimus?</p>
-            <a href="#"><button class="btn">learn more</button></a>
-        </div>
-    </section>
-    <!-- about section end -->
-    <!-- menu section starts -->
-    <section class="menu" id="menu">
-        <h1 class="heading">our delicious <span>menu</span></h1>
-        <ul class="list" data-aos="fade-down"> 
-            <li class="btn" data-src="img/menu1.jpg">breakfast</li>
-            <li class="btn active" data-src="img/menu2.jpg">lunch</li>
-            <li class="btn" data-src="img/menu3.jpg">dinner</li>
-            <li class="btn" data-src="img/menu4.jpg">dessert</li>
-        </ul>
-        
-        <div class="row" data-aos="fade-right">
-            <div class="image" data-aos="fade-left">
-                <img src="img/menu2.jpg" id="menu-img" alt="">
-            </div>
-            <div class="content">
-                <div class="info">
-                    <h3><span>01.</span> we serve best food in the country</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, labore.</p>
-                </div>
-                <div class="info">
-                    <h3><span>02.</span> we serve best food in the country</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, labore.</p>
-                </div>
-                <div class="info">
-                    <h3><span>03.</span> we serve best food in the country</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, labore.</p>
-                </div>
-                <div class="info">
-                    <h3><span>04.</span> we serve best food in the country</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, labore.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- menu section end -->
-    <!-- popular section starts -->
-    <section class="popular" id="popular">
-        <h1 class="heading"> most <span>popular</span> foods</h1>
-        <div class="box-container">
-            <div class="box" data-aos="fade-right">
-                <img src="img/product-1.jpg" alt="">
-                <h3>fried chicken</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="price">$33.00</div>
-                <a href="#"><button class="btn">add to cart</button></a>
-            </div>
-            <div class="box" data-aos="fade-left">
-                <img src="img/product-2.jpg" alt="">
-                <h3>fruit juice</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="price">$40.00</div>
-                <a href="#"><button class="btn">add to cart</button></a>
-            </div>
-            <div class="box" data-aos="fade-right">
-                <img src="img/product-3.jpg" alt="">
-                <h3>sandwich</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="price">$20.00</div>
-                <a href="#"><button class="btn">add to cart</button></a>
-            </div>
-            <div class="box" data-aos="fade-left">
-                <img src="img/product-4.jpg" alt="">
-                <h3>fried noodles</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                </div>
-                <div class="price">$10.00</div>
-                <a href="#"><button class="btn">add to cart</button></a>
-            </div>
-        </div>
-    </section>
-    
-    <!-- popular section end -->
-    <!-- gallery section starts -->
-    <section class="gallery" id="gallery">
-        <h1 class="heading"> our food <span>gallery</span></h1>
-        <div class="box-container">
-            <div class="box" data-aos="fade-up">
-                <img src="img/img1.jpg" alt="">
-            <h3>cake</h3>
-            </div>
-            <div class="box" data-aos="fade-up">
-                <img src="img/img2.jpg" alt="">
-                <h3>barbecue</h3>
-            </div>
-            <div class="box" data-aos="fade-up">
-                <img src="img/img3.jpg" alt="">
-                <h3>Fried eggs and bread</h3>
-            </div>
-            <div class="box" data-aos="fade-up">
-                <img src="img/img4.jpg" alt="">
-                <h3>fried chicken</h3>
-            </div>    
-            <div class="box" data-aos="fade-up">
-                <img src="img/img5.jpg" alt="">
-                <h3>juice</h3>
-            </div>
-            <div class="box" data-aos="fade-up">
-                <img src="img/img6.jpg" alt="">
-                <h3>sweet bread</h3>
-            </div>
-        </div>
-    </section>
-    <!-- gallery section end -->
-    <!-- order section starts -->
-    <section class="order" id="order">
+                    <a href="" class="desktop-item">Shop <span><i class="fas fa-chevron-down"></i></span>
+                    </a>
+                    <input type="checkbox" id="showMage">
+                    <label for="showMage" class="mobile-item">
+                        Shop<span><i class="fas fa-chevron-down"></i></span>
+                    </label>
+                    <div class="mega-box">
+                        <div class="content">
+                            <div class="row">
+                                <img src="./images/woman.jpg" alt="">
+                            </div>
+                            <div class="row">
+                                <header>Shop</header>
+                                <ul class="mega-links">
+                                    <li><a href="">Shop With Background</a></li>
+                                    <li><a href="">Shop Mini Categories</a></li>
+                                    <li><a href="">Shop Only Categories</a></li>
+                                    <li><a href="">Shop Icon Categories</a></li>
+                                </ul>
 
-        <h1 class="heading"> make an <span>order</span> </h1>
-        
-        <div class="row">
-        
-            <form action="" data-aos="fade-right">
-                <input type="text" placeholder="your name" class="box">
-                <input type="email" placeholder="your email" class="box">
-                <input type="password" placeholder="your password" class="box">
-                <input type="number" placeholder="your number" class="box">
-                <textarea name="" id="" cols="30" rows="10" class="box address" placeholder="your address"></textarea>
-                <input type="submit" value="order now" class="btn">
-            </form>
-        
-            <div class="image" data-aos="fade-left">
-                <img src="img/form-bg_1.jpg" alt="">
-            </div>
-        
-        </div>
-        
-        </section>
-         <!-- order section end -->
-    <div class="footer">
+                            </div>
 
-        <div class="box-container">
-    
-            <div class="box">
-                <h3>contact info</h3>
-                <p> <i class="fas fa-map-marker-alt"></i> mumbai, indai 400104 </p>
-                <p> <i class="fas fa-envelope"></i> example@gmail.com </p>
-                <p> <i class="fas fa-phone"></i> +123-456-7890 </p>
-                <p> <i class="fas fa-phone"></i> +111-222-333 </p>
-            </div>
-    
-            <div class="box">
-                <h3>branch location</h3>
-                <a href="#">vietnam</a>
-                <a href="#">USA</a>
-                <a href="#">france</a>
-                <a href="#">russia</a>
-            </div>
-    
-            <div class="box">
-                <h3>quick links </h3>
-                <a href="#">home</a>
-                <a href="#">about</a>
-                <a href="#">menu</a>
-                <a href="#">popular</a>
-                <a href="#">gallery</a>
-                <a href="#">order</a>
-            </div>
-    
-            <div class="box">
-                <h3>follow us</h3>
-                <a href="#">instagram</a>
-                <a href="#">facebook</a>
-                <a href="#">twitter</a>
-                <a href="#">linkedin</a>
-            </div>
-    
+                            <div class="row">
+                                <header>Filter Layout</header>
+                                <ul class="mega-links">
+                                    <li><a href="">Sidebar</a></li>
+                                    <li><a href="">Filter Default</a></li>
+                                    <li><a href="">Filter Drawer</a></li>
+                                    <li><a href="">Filter Dropdown</a></li>
+                                </ul>
+
+                            </div>
+
+                            <div class="row">
+                                <header>Product Layout</header>
+                                <ul class="mega-links">
+                                    <li><a href="">Layout Zoom</a></li>
+                                    <li><a href="">Layout Sticky</a></li>
+                                    <li><a href="">Layout Sticky 2</a></li>
+                                    <li><a href="">Layout Scroll</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="">Blog</a></li>
+                <li>
+                    <a href="" class="desktop-item">
+                        Vendors <span><i class="fas fa-chevron-down"></i></span>
+                    </a>
+                    <input type="checkbox" id="showdrop1">
+                    <label for="showdrop1" class="mobile-item">
+                        Vendors<span><i class="fas fa-chevron-down"></i></span>
+                    </label>
+                    <ul class="drop-menu1">
+                        <li><a href="">Vendor Store listings</a></li>
+                        <li><a href="">Store Details</a></li>
+
+                    </ul>
+                </li>
+                <li><a href="" class="desktop-item">
+                        Page<span><i class="fas fa-chevron-down"></i></span>
+                    </a>
+                    <input type="checkbox" id="showdrop2">
+                    <label for="showdrop2" class="mobile-item">
+                        Page<span><i class="fas fa-chevron-down"></i></span>
+                    </label>
+                    <ul class="drop-menu2">
+                        <li><a href="">About</a></li>
+                        <li><a href="">Contac</a></li>
+                        <li><a href="">Faq</a></li>
+                        <li><a href="">Page 404</a></li>
+                    </ul>
+                </li>
+                <li class="icons">
+                    <span>
+                        <img src="./images/shoppingBag.svg" alt="">
+                        <small class="count d-flex">0</small>
+                    </span>
+                    <span><img src="./images/search.svg" alt=""></span>
+                </li>
+            </ul>
+            <label for="" class="btn open-btn"><i class="fas fa-bars"></i></label>
         </div>
-    
-        <h1 class="credit">create by <a href="#">mr.thanh</a> all rights reserved. </h1>
-    
+    </nav>
+    <div class="hero">
+        <div class="left">
+            <span>Exclusive Sales</span>
+            <h1>UP TO 50% OFF ON SALES</h1>
+            <small>Get all exclusive offers for the season</small>
+            <a href="">View Collection</a>
+        </div>
+        <div class="right">
+            <img src="./images/hero.png" alt="">
+        </div>
     </div>
-   
-   
-    <!-- aos js cdn link  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Promotion -->
+    <section class="section  promotion">
+        <div class="title">
+            <h2>Shop Collections</h2>
+            <span>Select from the premium product and save plenty money</span>
+        </div>
+        <div class="promotion-layout container">
+            <div class="promotion-item">
+                <img src="./images/promo1.jpg" alt="">
+                <div class="promotion-content">
+                    <h3>FOR MEN</h3>
+                    <a href="">SHOP NOW</a>
+                </div>
+            </div>
+            <div class="promotion-item">
+                <img src="./images/promo2.jpg" alt="">
+                <div class="promotion-content">
+                    <h3>CASUAL SHOES</h3>
+                    <a href="">SHOP NOW</a>
+                </div>
+            </div>
+            <div class="promotion-item">
+                <img src="./images/promo3.jpg" alt="">
+                <div class="promotion-content">
+                    <h3>FOR MEN</h3>
+                    <a href="">SHOP NOW</a>
+                </div>
+            </div>
+            <div class="promotion-item">
+                <img src="./images/promo4.jpg" alt="">
+                <div class="promotion-content">
+                    <h3>LEATHER BELTS</h3>
+                    <a href="">SHOP NOW</a>
+                </div>
+            </div>
+            <div class="promotion-item">
+                <img src="./images/promo5.jpg" alt="">
+                <div class="promotion-content">
+                    <h3>DESIGNER BAGS</h3>
+                    <a href="">SHOP NOW</a>
+                </div>
+            </div>
+            <div class="promotion-item">
+                <img src="./images/promo6.jpg" alt="">
+                <div class="promotion-content">
+                    <h3>WATCHES</h3>
+                    <a href="">SHOP NOW</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Products -->
+    <section class="section products">
+        <div class="title">
+            <h2>New Products</h2>
+            <span>Select from the premium product brands and save plenty money</span>
+        </div>
+        <div class="product-layout">
+            <div class="product">
+                <div class="img-container">
+                    <img src="images/product1.jpg" alt="">
+                    <div class="addCart">
+                        <i class="fa fa-shopping-cart"></i>
+                    </div>
+                    <ul class="side-icons">
+                        <span><i class="fas fa-search"></i></span>
+                        <span><i class="far fa-heart"></i></span>
+                        <span><i class="fas fa-sliders-h"></i></span>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <a href="">Balo</a>
+                    <div class="price">
+                        <span>150.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="images/product2.jpg" alt="">
+                    <div class="addCart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <ul class="side-icons">
+                        <span><i class="fas fa-search"></i></span>
+                        <span><i class="far fa-heart"></i></span>
+                        <span><i class="fas fa-sliders-h"></i></span>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <a href="">Áo sơ mi</a>
+                    <div class="price">
+                        <span>100.000</span>
+                        <span class="cancel">160</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="images/product3.jpg" alt="">
+                    <div class="addCart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <ul class="side-icons">
+                        <span><i class="fas fa-search"></i></span>
+                        <span><i class="far fa-heart"></i></span>
+                        <span><i class="fas fa-sliders-h"></i></span>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <a href="">Giày</a>
+                    <div class="price">
+                        <span>200.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="images/product4.jpg" alt="">
+                    <div class="addCart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <ul class="side-icons">
+                        <span><i class="fas fa-search"></i></span>
+                        <span><i class="far fa-heart"></i></span>
+                        <span><i class="fas fa-sliders-h"></i></span>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <a href="">Balo</a>
+                    <div class="price">
+                        <span>50.000</span>
+                        <span class="cancel">100</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="images/product5.jpg" alt="">
+                    <div class="addCart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <ul class="side-icons">
+                        <span><i class="fas fa-search"></i></span>
+                        <span><i class="far fa-heart"></i></span>
+                        <span><i class="fas fa-sliders-h"></i></span>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <a href="">Vest</a>
+                    <div class="price">
+                        <span>90.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="images/product6.jpg" alt="">
+                    <div class="addCart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <ul class="side-icons">
+                        <span><i class="fas fa-search"></i></span>
+                        <span><i class="far fa-heart"></i></span>
+                        <span><i class="fas fa-sliders-h"></i></span>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <a href="">Vest</a>
+                    <div class="price">
+                        <span>80.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="images/product7.jpg" alt="">
+                    <div class="addCart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <ul class="side-icons">
+                        <span><i class="fas fa-search"></i></span>
+                        <span><i class="far fa-heart"></i></span>
+                        <span><i class="fas fa-sliders-h"></i></span>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <a href="">Túi xách</a>
+                    <div class="price">
+                        <span>170.000</span>
+                        <span class="cancel">300</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="images/product8.jpg" alt="">
+                    <div class="addCart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <ul class="side-icons">
+                        <span><i class="fas fa-search"></i></span>
+                        <span><i class="far fa-heart"></i></span>
+                        <span><i class="fas fa-sliders-h"></i></span>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <a href="">Women's shoes</a>
+                    <div class="price">
+                        <span>270.000</span>
+                        <span class="cancel">300.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="images/product9.jpg" alt="">
+                    <div class="addCart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <ul class="side-icons">
+                        <span><i class="fas fa-search"></i></span>
+                        <span><i class="far fa-heart"></i></span>
+                        <span><i class="fas fa-sliders-h"></i></span>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <a href="">sport shoes</a>
+                    <div class="price">
+                        <span>70.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="images/product10.jpg" alt="">
+                    <div class="addCart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <ul class="side-icons">
+                        <span><i class="fas fa-search"></i></span>
+                        <span><i class="far fa-heart"></i></span>
+                        <span><i class="fas fa-sliders-h"></i></span>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <a href="">sport shoes</a>
+                    <div class="price">
+                        <span>70.000</span>
+                        <span class="cancel">300.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="images/product11.jpg" alt="">
+                    <div class="addCart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <ul class="side-icons">
+                        <span><i class="fas fa-search"></i></span>
+                        <span><i class="far fa-heart"></i></span>
+                        <span><i class="fas fa-sliders-h"></i></span>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <a href="">watch</a>
+                    <div class="price">
+                        <span>170.000</span>
+                        <span class="cancel">300.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="images/product12.jpg" alt="">
+                    <div class="addCart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <ul class="side-icons">
+                        <span><i class="fas fa-search"></i></span>
+                        <span><i class="far fa-heart"></i></span>
+                        <span><i class="fas fa-sliders-h"></i></span>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <a href="">watch</a>
+                    <div class="price">
+                        <span>170.000</span>
+                        <span class="cancel">200.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="images/product13.jpg" alt="">
+                    <div class="addCart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <ul class="side-icons">
+                        <span><i class="fas fa-search"></i></span>
+                        <span><i class="far fa-heart"></i></span>
+                        <span><i class="fas fa-sliders-h"></i></span>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <a href="">Túi xách</a>
+                    <div class="price">
+                        <span>470.000</span>
+                    </div>
+                </div>
+            </div>
+            <div class="product">
+                <div class="img-container">
+                    <img src="images/product14.jpg" alt="">
+                    <div class="addCart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <ul class="side-icons">
+                        <span><i class="fas fa-search"></i></span>
+                        <span><i class="far fa-heart"></i></span>
+                        <span><i class="fas fa-sliders-h"></i></span>
+                    </ul>
+                </div>
+                <div class="bottom">
+                    <a href="">Women's shoes</a>
+                    <div class="price">
+                        <span>200.000</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ADVERT -->
+    <section class="section advert">
+        <div class=" advert-layout container">
+            <div class="item">
+                <img src="./images/promo7.jpg" alt="">
+                <div class="content left">
+                    <span>Exclusive Sales</span>
+                    <h3>Spring Collections</h3>
+                    <a href="" class="btn">View Collectio</a>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/promo8.jpg" alt="">
+                <div class="content right">
+                    <span>New Trending</span>
+                    <h3>Designer Bags</h3>
+                    <a href="" class="btn">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- BRANDS -->
+    <section class="section brands">
+        <div class="title">
+            <h2>Shop by Brand</h2>
+            <span>Select from the premium product brands and save plenty money</span>
+        </div>
 
-    <!-- jquery cdn link  -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <!-- custom js file link  -->
-    <script src="JavaScript.js" ></script>      
+        <div class="brand-layout container">
+            <div class="glide" id="glide1">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide">
+                            <img src="./images/brand1.png" alt="">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./images/brand2.png" alt="">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./images/brand3.png" alt="">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./images/brand4.png" alt="">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./images/brand5.png" alt="">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./images/brand6.png" alt="">
+                        </li>
+                        <li class="glide__slide">
+                            <img src="./images/brand7.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Footer -->
+  <footer id="footer" class="section footer">
+    <div class="container">
+      <div class="footer-container">
+        <div class="footer-center">
+          <h3>EXTRAS</h3>
+          <a href="#">Brands</a>
+          <a href="#">Gift Certificates</a>
+          <a href="#">Affiliate</a>
+          <a href="#">Specials</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-center">
+          <h3>INFORMATION</h3>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Site Map</a>
+        </div>
+        <div class="footer-center">
+          <h3>MY ACCOUNT</h3>
+          <a href="#">My Account</a>
+          <a href="#">Order History</a>
+          <a href="#">Wish List</a>
+          <a href="#">Newsletter</a>
+          <a href="#">Returns</a>
+        </div>
+        <div class="footer-center">
+          <h3>CONTACT US</h3>
+          <div>
+            <span>
+              <i class="fas fa-map-marker-alt"></i>
+            </span>
+            42 Dream House, Dreammy street, 7131 Dreamville, USA
+          </div>
+          <div>
+            <span>
+              <i class="far fa-envelope"></i>
+            </span>
+            company@gmail.com
+          </div>
+          <div>
+            <span>
+              <i class="fas fa-phone"></i>
+            </span>
+            456-456-4512
+          </div>
+          <div class="payment-methods">
+            <img src="./images/payment.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+    <!-- Glidejs -->
+    <script src="./lib/glide.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="./js/products.js"></script>
+    <script src="./js/slider.js"></script>
+    <script src="./js/index.js"></script>
 </body>
+
 </html>
